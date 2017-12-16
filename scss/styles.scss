@@ -1,4 +1,18 @@
-body {
-  background: red;
-  color: yellow;
-}
+//variables
+
+//paleta de color
+$primary-color: hsl(205, 80, 60);
+$secondary-color: hsl(0, 10, 10);
+// $third-color: hsl();
+
+
+//tamaños de fuentes
+$xl: 24px;
+$l: 20px;
+$m: 16px;
+$s: 13px;
+$xs: 11px;
+
+// variables de layout
+$gutter: 16px;
+$max-width: 1200px;
