@@ -1,0 +1,25 @@
+.main-container {
+  width: 100%;
+  max-width: $max-width;
+}
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &-2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &-1 {
+    width: 100%;
+  }
+
+  .contact-widget {
+    display: none;
+  }
+}

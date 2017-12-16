@@ -2,33 +2,54 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width" initial-scale=1, user-scalable=no>
+  <link href="https://file.myfontastic.com/CML3QCNiTb3HrSdoPsg6q9/icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>Proyecto</title>
 </head>
 <body>
   <!-- header -->
-  <header class="main-header">
-    <!-- logo -->
-    <div class="logo"></div>
-    <!-- call -->
-    <div>
-      <div class="icon-call button button--dark"></div>
+  <header class="main-header main-container">
+    <div class="main-header-1">
+      <!-- logo -->
+      <img class="logo" src="img/logo.png"  alt="">
     </div>
-    <!-- location -->
-    <div class="icon-location button button--dark"></div>
-    <!-- donate -->
-    <div class="donate button button--dark"></div>
+    <div class="main-header-2">
+      <!-- call -->
+      <div class="contact-widget">
+        <!-- icon -->
+        <div class="contact-widget__icon icon-call button button--dark button--square"></div>
+        <!-- dates -->
+        <div class="contact-widget__data">
+          <!-- title -->
+          <h3 class="contact-widget__title">Call now</h3>
+          <p class="contact-widget__content">123-456-789</p>
+        </div>
+      </div>
+      <!-- location -->
+      <div class="contact-widget">
+        <!-- icon -->
+        <div class="contact-widget__icon icon-location button button--dark button--square"></div>
+        <!-- dates -->
+        <div class="contact-widget__data">
+          <!-- title -->
+          <h3 class="contact-widget__title">Our location</h3>
+          <p class="contact-widget__content">Calle los manzanos 123 - Guadalajara</p>
+        </div>
+      </div>
+      <!-- donate -->
+      <a href="#" class="donate button button--dark">Donate now!</a>
+    </div>
   </header>
 
   <!-- menu -->
 <nav class="main-nav">
   <ul class="main-menu">
-    <li class="main-menu__item"><a href="#" class=".main-menu__link">Home</a></li>
-    <li class="main-menu__item"><a href="#" class=".main-menu__link">About us</a></li>
-    <li class="main-menu__item"><a href="#" class=".main-menu__link">Events</a></li>
-    <li class="main-menu__item"><a href="#" class=".main-menu__link">Gallery</a></li>
-    <li class="main-menu__item"><a href="#" class=".main-menu__link">Contact</a></li>
+    <li class="main-menu__item"><a href="#" class="main-menu__link">Home</a></li>
+    <li class="main-menu__item"><a href="#" class="main-menu__link">About us</a></li>
+    <li class="main-menu__item"><a href="#" class="main-menu__link">Events</a></li>
+    <li class="main-menu__item"><a href="#" class="main-menu__link">Gallery</a></li>
+    <li class="main-menu__item"><a href="#" class="main-menu__link">Contact</a></li>
   </ul>
   <div class="social-networks">
     <a class="icon-facebook" href="https://facebook.com"><i></i></a>
@@ -40,13 +61,13 @@
 
   <!-- banner -->
   <div class="main-banner">
-    <img src="img/logo.png" alt="" class="main-banner__img">
+    <img src="" alt="" class="main-banner__img">
     <div class="main-banner__data">
       <h2 class="main-banner__title">Go Green</h2>
       <p class="main-banner__subtitle">Save the world by plating trees</p>
       <p class="main-banner__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ducimus autem! Voluptas repudiandae, deserunt sint, magni iure amet mollitia ipsa voluptates asperiores soluta quos facere quae nam aut qui, eos.</p>
       <a href="#" class="main-banner__button button button--light">Join now!</a>
-      <a href="#" class="main-banner__button button bbutton--cta">Donate now</a>
+      <a href="#" class="main-banner__button button button--cta">Donate now</a>
     </div>
   </div>
   <!-- features -->
