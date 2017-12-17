@@ -1,5 +1,12 @@
 .main-nav {
   background: $primary-color;
+  max-height: 0;
+  transition: all 1s ease;
+
+  &.show {
+    transition: all 1s ease;
+    max-height: 1000px;
+  }
 }
 
 .main-menu {
@@ -19,4 +26,13 @@
     padding: 0 1em;
     color: #fff;
   }
+}
+
+.toggle-menu {
+  color: $primary-color;
+  display: table;
+  font-size: 1.6em;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
