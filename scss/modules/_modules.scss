@@ -7,8 +7,12 @@
     background: $secondary-color;
     color: #fff;
     text-align: center;
-    line-height: 2.4em;
     font-size: 1.5em;
+    margin-left: .5em;
+
+    &.button {
+      line-height: 2.3;
+    }
   }
 
   &__data {
