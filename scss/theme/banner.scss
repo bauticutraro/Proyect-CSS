@@ -18,16 +18,31 @@
 
  &__data {
    position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: 65%;
    display: flex;
-   justify-content: space-around;
    flex-wrap: wrap;
+   width: 65%;
+   top: 50%;
+   left: 5em;
+   transform: translateY(-50%);
 
-   @media screen and (min-width: 480px) {
-     width: 40%;  
+    @media screen and (min-width: 480px) {
+      width: 40%;
+    }
+
+   @media screen and (min-width: 640px) {
+     width: 30%;
+   }
+
+   @media screen and (min-width: 768px) {
+     width: 50%;
+   }
+
+   @media screen and (max-width: 768px) {
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     justify-content: space-around;
+
    }
  }
 
@@ -36,11 +51,49 @@
   width: 100%;
   text-align: center;
   color: $primary-color;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    font-size: 3em;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.3em;
+  }
 }
 
 &__subtitle,
 &__description {
-  display: none;
+  color: #fff;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+&__subtitle {
+  font-size: 1.4em;
+  margin: 0;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 17%;
+    height: 2px;
+    background: $primary-color;
+  }
+}
+
+&__description {
+  font-size: $s;
+  line-height: 1.6;
+}
+
+.button {
+  @media screen and (min-width: 768px) {
+    margin-right: 1em;
+  }
 }
 
 }
