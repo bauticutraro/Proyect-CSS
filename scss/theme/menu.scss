@@ -1,12 +1,21 @@
 .main-nav {
   background: $primary-color;
-  max-height: 0;
-  transition: all 1s ease;
 
-  &.show {
+  @media screen and (max-width: 1024px) {
+    max-height: 0;
     transition: all 1s ease;
-    max-height: 1000px;
+
+    &.show {
+      transition: all 1s ease;
+      max-height: 1000px;
+    }
   }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 
 .main-menu {
@@ -15,8 +24,16 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+
   &__item  {
     border-bottom: 1px solid rgba(#fff,.5);
+
+    @media screen and (min-width: 1024px) {
+      border-bottom: none;
+    }
   }
 
   &__link {
@@ -25,6 +42,7 @@
     line-height: 3;
     padding: 0 1em;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -35,4 +53,8 @@
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
