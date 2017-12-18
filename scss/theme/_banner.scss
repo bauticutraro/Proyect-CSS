@@ -1,9 +1,6 @@
 .main-banner {
   position: relative;
-
-  &__img {
-    display: block;
-  }
+  background: url(../img/banner.jpg) center / cover no-repeat;
 
   &::before {
     content: '';
@@ -16,14 +13,16 @@
 
   }
 
+  &__data-container {
+      padding-top: 10em;
+      padding-bottom: 10em;
+  }
+
  &__data {
-   position: absolute;
    display: flex;
    flex-wrap: wrap;
    width: 65%;
-   top: 50%;
-   left: 5em;
-   transform: translateY(-50%);
+   position: relative;
 
     @media screen and (min-width: 480px) {
       width: 40%;

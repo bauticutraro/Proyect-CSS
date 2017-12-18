@@ -60,12 +60,30 @@
 
 
 .social-networks {
-  padding-left: 1em;
+  padding-left: $gutter;
+  padding-right: $gutter;
   a {
     text-decoration: none;
     color: #fff;
     display: inline-block;
     line-height: 3;
     margin-right: .5em;
+  }
+}
+
+
+//secciones
+
+.section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+
+    span {
+      color: $primary-color;
+    }
   }
 }
