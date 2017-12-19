@@ -1,0 +1,22 @@
+.main-footer {
+  background: $secondary-color;
+  color: rgba(#fff, .7);
+  padding: 1em;
+  text-align: center;
+  margin-top: 4em;
+
+  &__inner {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+
+      p:first-child {
+        margin-right: auto;
+      }
+      p:last-child {
+        margin-left: 1em;
+        border-left: 1px solid;
+        padding-left: 1em;
+      }
+    }
+  }
+}
